@@ -1,0 +1,14 @@
+@keyframes html{
+  from{width: 0%;}
+  to{width: 50%;}
+}
+
+@keyframes css{
+  from{width: 0%;}
+  to{width: 48%;}
+}
+
+@keyframes js{
+  from{width: 0;}
+  to{width: 1%;}
+}
