@@ -1,0 +1,103 @@
+/*font import*/
+	@font-face {
+		font-family: poppins;
+		src: url(font/poppins/Poppins-Regular.ttf);
+	}
+	@font-face {
+		font-family: aexpective;
+		src: url(font/aexpective/AEXPECTIVE.woff2);
+	}
+	@font-face{
+	  font-family: jetbrainreg;
+	  src: url(font/jetbrains/Regular.woff2);
+	}
+
+/* variable */
+	:root{
+		--aksen-satu: #e92954;
+		--aksen-dua: #dcdcdc;
+		--aksen-tiga: #d1254b;
+		--aksen-empat: #141414;
+	}
+
+/* body */
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: 'poppins', sans-serif;
+	background-color: bLACK;
+	color: white;
+}
+
+/* navigation */
+div.parent-nav{
+	position: sticky;
+	top: 0;
+}
+	nav{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 2% 5%;
+		backdrop-filter: blur(50px);
+		-webkit-backdrop-filter: blur(50px);
+		}
+	nav .nav-left .logo-text{
+		font-family: 'aexpective';
+		color: #E92954;
+	}
+
+/* header */
+div.header{
+	padding: 5%;
+	background-image: url(img/bg.jpg);
+background-size: cover;
+}
+	h1.greating{
+		font-size: 11vw;
+		color: var(--aksen-satu);
+	}
+	.btn{
+		background: var(--aksen-empat);
+		color: var(--aksen-tiga);
+		padding: 10px 20px;
+		border-radius: 10000000px;
+		border-style: none;
+	}	.btn:hover{
+		background: var(--aksen-tiga);
+		box-shadow: 0 0 13px #d1254b;
+		color: white;
+		transition: .5s;
+	}
+	.header p{
+		padding-top: 10px;
+		opacity: .2;
+	}
+
+
+/* parts */
+.isian{
+  padding: 5%;
+}
+  .part-title{
+    font-family: jetbrainreg;
+    letter-spacing: 6px;
+    font-size: 1rem;
+  }
+  .breath{
+    animation: breath .5s alternate-reverse infinite ;
+  }
+  
+  @keyframes breath{
+    0%{
+      opacity: 0;
+    }
+    50%{
+      opacity: .5%;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
