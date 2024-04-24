@@ -1,0 +1,35 @@
+body{
+    font-family:"Montserrat", sans-serif;
+    background-color: rgb(244, 246, 245);
+    color: rgb(56, 86, 112);
+    padding-left: 15vw;
+    padding-right: 15vw;
+}
+
+/*nav*/
+.parent-nav{
+    display: flex;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid rgb(127, 117, 109);
+}
+
+.profil-picture{
+    width: 3.5rem;
+    border: 3px solid rgb(179, 165, 154);
+    border-radius: 100%;
+}
+.nav-right{
+    text-align: right;
+}
+
+/*heads up*/
+.headsup{
+    padding-top: 3%;
+}
+.headsup a.highlight{
+    color: rgb(210, 179, 151);
