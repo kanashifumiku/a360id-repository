@@ -1,0 +1,196 @@
+/* RESET & IMPORT */
+*{padding: 0; margin:0;}
+body{
+  background: black;
+  font-family: 'Nunito Sans';
+  color: whitesmoke;
+}
+
+a{color: rgba(83, 248, 167, 1);}
+
+@font-face {
+  font-family: aero;
+  src: url(aero.otf);
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+/* navigation */
+nav{
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.navigation{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigation .left{
+  backdrop-filter: blur(1.5px);
+  border: .5px solid rgba(57, 57, 57, .5);
+  background: #00000078;
+  border-radius: 1000px;
+  margin: 12px;
+  padding: 12px;
+  font-family: 'aero';
+}
+
+.navigation .right{
+  backdrop-filter: blur(1.5px);
+border: 2px solid rgba(57, 57, 57, .5);
+background: #000000C9;
+border-radius: 1000px;
+margin: 12px;
+padding: 12px;
+}
+
+/* bg anim */
+.aur-out-cont{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: -5;
+  inset: 0;
+  margin: auto;
+  filter: blur(50px);
+  opacity: .8;
+}
+
+.aur-inn-cont{
+  width: 100vw;
+  height: 100vh;
+  border-radius: 1000%;
+  inset: 0;
+  margin: auto;
+  position: absolute;
+  background: black;
+  overflow: hidden;
+  transform: scale(.8)
+}
+
+.aur{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  inset: 0;
+  margin: auto;
+  background: conic-gradient(from 0deg, #3a478d, #4a68be, #7398df, #674e85, #7e6fb0);
+  animation: spinAur 30s linear infinite;
+}
+
+@keyframes spinAur{
+  0%{
+    transform: rotate(0deg) scale(.9) ;
+    
+  }
+  100%{
+    transform: rotate(1turn) scale(.9);
+    
+  }
+}
+
+/* def set */
+.card-origin{
+  margin: 12px;
+  padding: 12px;
+  border-radius: 20px;
+  border: .5px solid rgba(225, 225, 225, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.card-origin ul li{
+  list-style: none;
+}
+
+.boxPills{
+  background: rgba(255, 255, 255, 0.1);
+  padding: 3px;
+  border-radius: 999px;
+  border: .5px solid rgba(225, 225, 225, .2);
+}
+
+.contacti{
+  margin: 12px;
+  padding: 12px;
+  border-radius: 20px;
+  border: .5px solid rgba(225, 225, 225, 0.2);
+  background: rgba(119, 137, 56, 0.1);
+}
+
+.bar{
+  display: block;
+  height: 3px;
+  border-radius: 3px;
+  background: #7789387D;
+}
+
+.bar span{
+  float: left;
+  background: #778938;
+  height: 3px;
+}
+
+.progres{
+  width: 50%;
+  animation: pro 5s;
+}
+
+@keyframes pro{
+  0%{width: 0%;}
+  100%{width: 50%;}
+}
+
+/* style for field contact */
+fieldset{
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+
+fieldset input{
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 999px;
+  color: rgba(32, 186, 159, 1);
+  padding: 5px 10px;
+  margin-bottom: 5px;
+}
+
+/* group */
+.group-parrent{
+  padding: 12px;
+  margin: 12px;
+}
+.group{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.group .card-origin{
+  margin: 0;
+}
+
+
+.card-sos{
+  padding: 12px;
+  margin-bottom: 10px;
+  width: 30%;
+  height: 500%;
+  border-radius: 20px;
+  border: .5px solid rgba(225, 225, 225, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+} .card-sos:released{
+  background: red;
+  transition: 1s ease;
+}
+
+/* footer */
+footer{
+  background: rgba(255, 255, 255, .0);
+  border-top: 1px solid rgba(255, 255, 255, .3);
+  padding: 12px 0;
+  
+}

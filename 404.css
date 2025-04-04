@@ -1,0 +1,84 @@
+body{
+  background: black;
+  color: white;
+}
+
+*{margin: 0; padding: 0;}
+
+@font-face {
+  font-family: aero;
+  src: url(aero.otf);
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+.aur-out-cont{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: -5;
+  inset: 0;
+  margin: auto;
+  filter: blur(90px);
+  opacity: .5;
+}
+
+.aur-inn-cont{
+  width: 100vw;
+  height: 100vh;
+  border-radius: 1000%;
+  inset: 0;
+  margin: auto;
+  position: absolute;
+  background: black;
+  overflow: hidden;
+  transform: scale(.8)
+}
+
+.aur{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  inset: 0;
+  margin: auto;
+  background: conic-gradient(from 0deg, #FFF700,#FF0000, #FF5353, #FF9191, #A60E0E);
+  animation: spinAur 15s linear infinite;
+}
+
+@keyframes spinAur{
+  0%{
+    transform: rotate(0deg) scale(.9) ;
+    opacity: 0;
+  }
+  25%{
+    transform: rotate(72deg) scale(.9);
+    opacity: 1;
+  }
+  50%{
+    transform: rotate(144deg) scale(.9);
+    opacity: 0;
+  }
+  75%{
+    transform: rotate(216deg) scale(.9);
+    opacity: 1;
+  }
+  100%{
+    transform: rotate(288turn) scale(.9);
+    opacity: 0;
+  }
+}
+
+h1{
+  font-family: 'aero';
+
+}
+
+.box{
+  display: block;
+  position: fixed;
+  margin: 12px;
+padding: 12px;
+border-radius: 20px;
+border: .5px solid rgba(225, 225, 225, 0.2);
+background: rgba(255, 255, 255, 0.1);
+}
